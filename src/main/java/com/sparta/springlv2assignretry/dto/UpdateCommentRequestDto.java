@@ -3,7 +3,7 @@ package com.sparta.springlv2assignretry.dto;
 import lombok.Getter;
 
 @Getter
-public class UpdateTodoTitleRequestDto {
+public class UpdateCommentRequestDto {
 
-    private String title;
+    private String comment;
 }

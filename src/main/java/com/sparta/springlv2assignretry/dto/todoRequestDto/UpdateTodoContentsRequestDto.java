@@ -1,4 +1,4 @@
-package com.sparta.springlv2assignretry.dto;
+package com.sparta.springlv2assignretry.dto.todoRequestDto;
 
 import lombok.Getter;
 

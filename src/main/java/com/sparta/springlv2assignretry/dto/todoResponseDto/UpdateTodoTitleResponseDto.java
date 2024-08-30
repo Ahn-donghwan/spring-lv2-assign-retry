@@ -1,11 +1,11 @@
-package com.sparta.springlv2assignretry.dto;
+package com.sparta.springlv2assignretry.dto.todoResponseDto;
 
 import lombok.Getter;
 
 import java.time.LocalDateTime;
 
 @Getter
-public class UpdateTodoContentsResponseDto {
+public class UpdateTodoTitleResponseDto {
 
     private final String username;
     private final String title;
@@ -13,7 +13,7 @@ public class UpdateTodoContentsResponseDto {
     private final LocalDateTime modifiedAt;
 
 
-    public UpdateTodoContentsResponseDto(String username, String title, String contents, LocalDateTime modifiedAt) {
+    public UpdateTodoTitleResponseDto(String username, String title, String contents, LocalDateTime modifiedAt) {
         this.username = username;
         this.title = title;
         this.contents = contents;

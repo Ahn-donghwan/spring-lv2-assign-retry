@@ -18,8 +18,6 @@ public class Todo extends Timestamped {
     private String username;
     private String title;
     private String contents;
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
 
 
     public Todo(String title, String contents) {

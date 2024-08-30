@@ -1,7 +1,6 @@
-package com.sparta.springlv2assignretry.dto;
+package com.sparta.springlv2assignretry.dto.todoResponseDto;
 
 import lombok.Getter;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
 

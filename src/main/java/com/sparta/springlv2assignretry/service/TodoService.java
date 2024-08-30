@@ -1,6 +1,12 @@
 package com.sparta.springlv2assignretry.service;
 
-import com.sparta.springlv2assignretry.dto.*;
+import com.sparta.springlv2assignretry.dto.todoRequestDto.TodoSaveRequestDto;
+import com.sparta.springlv2assignretry.dto.todoRequestDto.UpdateTodoContentsRequestDto;
+import com.sparta.springlv2assignretry.dto.todoRequestDto.UpdateTodoTitleRequestDto;
+import com.sparta.springlv2assignretry.dto.todoResponseDto.TodoDetailResponseDto;
+import com.sparta.springlv2assignretry.dto.todoResponseDto.TodoSaveResponseDto;
+import com.sparta.springlv2assignretry.dto.todoResponseDto.UpdateTodoContentsResponseDto;
+import com.sparta.springlv2assignretry.dto.todoResponseDto.UpdateTodoTitleResponseDto;
 import com.sparta.springlv2assignretry.entity.Todo;
 import com.sparta.springlv2assignretry.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +32,7 @@ public class TodoService {
     public TodoDetailResponseDto getTodo(String todoUsername) {
         Todo todo = todoRepository.findById(todoUsername).orElseThrow(() -> new NullPointerException("해당 Username 으로 조회할 수 없음. 다시 시도해주세요."));
 
-        return new TodoDetailResponseDto( todo.getUsername(), todo.getTitle(), todo.getContents());
+        return new TodoDetailResponseDto( todo.getUsername(), todo.getTitle(), todo.getContents(), todo.getCreatedAt());
     }
 
     @Transactional
